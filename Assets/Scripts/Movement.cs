@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    private float acceleration = 5f;
+    private float acceleration = 75f;
 
     private Rigidbody2D rb;
 
@@ -18,6 +18,6 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
-        rb.AddForce(Vector2.up * acceleration * Time.deltaTime);
+        rb.AddForce(direction * acceleration * Time.deltaTime);
     }
 }

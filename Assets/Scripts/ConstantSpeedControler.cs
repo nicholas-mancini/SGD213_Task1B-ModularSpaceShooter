@@ -7,6 +7,7 @@ public class ConstantSpeedControler : MonoBehaviour
     [SerializeField]
     private Vector2 direction;
 
+    [SerializeField]
     private Movement movment;
 
     // Start is called before the first frame update
