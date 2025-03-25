@@ -29,13 +29,13 @@ public class TripleShot : MonoBehaviour, IWeapon
         //    float CurrentTime = Time.time;
 
         //    // Have a delay so we don't shoot too many bullets
-        //    if (CurrentTime - lastFiredTime > fireDelay)
+        //    if (CurrentTime - lastTimeFired > fireDelay)
         //    {
         //        Vector2 spawnPosition = new Vector2(transform.position.x, transform.position.y + bulletOffset);
 
         //        Instantiate(bullet, spawnPosition, transform.rotation);
 
-        //        lastFiredTime = CurrentTime;
+        //        lastTimeFired = CurrentTime;
         //    }
 
         //    //print("Shoot!");
