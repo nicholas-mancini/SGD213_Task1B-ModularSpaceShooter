@@ -8,7 +8,7 @@ public enum TagListType
     Whitelist
 }
 
-public class DestroyedOnCollision : MonoBehaviour
+public class DestroyObject : MonoBehaviour
 {
 
     [SerializeField]
@@ -39,5 +39,10 @@ public class DestroyedOnCollision : MonoBehaviour
         {
             // Use default collision code
         }
+    }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

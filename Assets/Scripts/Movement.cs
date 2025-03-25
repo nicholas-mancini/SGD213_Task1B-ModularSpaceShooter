@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -18,6 +19,7 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
-        rb.AddForce(direction * acceleration * Time.deltaTime);
+        rb.velocity = direction * acceleration * Time.deltaTime;
+        //rb.AddForce(direction * acceleration * Time.deltaTime);
     }
 }
